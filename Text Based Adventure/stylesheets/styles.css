@@ -1,0 +1,478 @@
+body {
+	background: url(../images/backgrounds/body-background.png);
+}
+
+#container {
+	background: url(../images/backgrounds/view-port-background.png);
+	border: 1px solid #ccc;
+	margin: 10px auto;
+	width: 650px;
+}
+
+h1 {
+	text-align: center;
+}
+
+/* Scene Backgrounds */
+
+#viewPort {
+	background: white;
+	border: 1px solid #ccc;
+	height: 497px;
+	margin: 0 auto 40px auto;
+	position: relative;
+	width: 98%;
+}
+
+.backdrop {
+	height: 100%;
+	width: 100%;
+	position:absolute;
+	z-index: 1;
+}
+
+#viewPort.begin {
+	background: url(../images/backgrounds/game-background-p5-1-x.jpg);
+	background-size: contain;
+}
+
+#viewPort.intro {
+	background: url(../images/backgrounds/game-background-p7-4-x.jpg);
+	background-size: contain;
+}
+
+#viewPort.room-1 {
+	background: url(../images/backgrounds/room-1/room-1.jpg);
+	background-size: contain;
+}
+
+#viewPort.room-2 {
+	background: url(../images/backgrounds/room-2/room-2-0.jpg);
+	background-size: contain;
+}
+
+#viewPort.room-3 {
+	background: url(../images/backgrounds/room-3/room-3-1.jpg);
+	background-size: contain;
+}
+
+#viewPort.room-4 {
+	background: url(../images/backgrounds/room-4/room-4.jpg);
+	background-size: contain;
+}
+
+#viewPort.room-5 {
+	background: url(../images/backgrounds/room-5/room-5.jpg);
+	background-size: contain;
+}
+
+#viewPort.room-6 {
+	background: url(../images/backgrounds/room-6/room-6.jpg);
+	background-size: contain;
+}
+
+.backdrop.state-1 {
+	background: url(../images/backgrounds/room-2/room-2-0.jpg);
+	background-size: contain;
+}
+
+.backdrop.state-2 {
+	background: url(../images/backgrounds/room-2/room-2-1.jpg);
+	background-size: contain;
+}
+
+.backdrop.state-3 {
+	background: url(../images/backgrounds/room-2/room-2-2.jpg);
+	background-size: contain;
+}
+
+.backdrop.state-4 {
+	background: url(../images/backgrounds/room-2/room-2-3.jpg);
+	background-size: contain;
+}
+
+.backdrop.state-5 {
+	background: url(../images/backgrounds/room-2/room-2-4.jpg);
+	background-size: contain;
+}
+
+.backdrop.state-6 {
+	background: url(../images/backgrounds/room-2/room-2-5.jpg);
+	background-size: contain;
+}
+
+.backdrop.state-7 {
+	background: url(../images/backgrounds/room-2/room-2-6.jpg);
+	background-size: contain;
+}
+
+.backdrop.state-8 {
+	background: url(../images/backgrounds/room-2/room-2-7.jpg);
+	background-size: contain;
+}
+
+.backdrop.state-9 {
+	background: url(../images/backgrounds/room-2/room-2-8.jpg);
+	background-size: contain;
+}
+
+.backdrop.state-10 {
+	background: url(../images/backgrounds/room-2/room-2-9.jpg);
+	background-size: contain;
+}
+
+.backdrop.state-11 {
+	background: url(../images/backgrounds/room-2/room-2-10.jpg);
+	background-size: contain;
+}
+
+
+.scene-message {
+	background: black;
+	color: white;
+	padding: 10px;
+	position: absolute;
+	margin-top: 0;
+	text-align: center;
+	width: 617px;
+	z-index: 3;
+}
+
+.message {
+	background: black;
+	color: white;
+	padding: 10px;
+	position: absolute;
+	top: 50px;
+	z-index: 3;
+}
+
+.message.narrator {
+	border: 1px solid aqua;
+	color: aqua;
+}
+
+.message.Astral {
+	border: 1px solid #f49ac1;
+	color: #f49ac1;
+}
+
+.message.judge {
+	border: 1px solid gold;
+	color: gold;
+}
+
+.sprite {
+	cursor: pointer;
+	position: absolute;
+	z-index: 2;
+}
+
+.clickBlocker {
+	cursor: default;
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+}
+
+.talkingCreature {
+	background: url(../images/sprites/creature-talking.gif) no-repeat;
+	cursor: default;
+	height: 149px;
+	width: 149px;
+	top: 339px;
+	left: 478px;	
+}
+
+.poolDrowningCreature {
+	background: url(../images/sprites/room-1/poolDrowningCreature.gif) no-repeat;
+	height: 45px;
+	width: 96px;
+	top: 364px;
+	left: 275px;
+}
+
+.hook {
+	background: url(../images/sprites/room-1/hook.jpg) no-repeat;
+	height: 18px;
+	width: 21px;
+	top: 300px;
+	left: 141px;	
+}
+
+.stick {
+	background: url(../images/sprites/room-1/stick.jpg) no-repeat;
+	height: 17px;
+	width: 108px;
+	top: 462px;
+	left: 405px;	
+}
+
+.leaf {
+	background: url(../images/sprites/room-1/leaf.jpg) no-repeat;
+	height: 39px;
+	width: 55px;
+	top: 399px;
+	left: 324px;	
+}
+
+.room1DoorClosed {
+	background: url(../images/sprites/room-1/room-1-door-closed.png) no-repeat;
+	height: 160px;
+	width: 110px;
+	top: 135px;
+	left: 266px;
+}
+
+.room1DoorOpen {
+	background: url(../images/sprites/room-1/room-1-door-open.png) no-repeat;
+	height: 197px;
+	width: 93px;
+	top: 138px;
+	left: 175px;	
+}
+
+.room1ClickToProgress {
+	height: 150px;
+    width: 100px;
+    top: 145px;
+    left: 272px;
+}
+
+.redButton {
+	background: url(../images/sprites/room-2/buttons/r-btn.jpg) no-repeat;	
+	height: 71px;
+	width: 72px;
+    top: 417px;
+    left: 10px;	
+}
+
+.redButtonBlueGlow {
+	background: url(../images/sprites/room-2/buttons/r-btn-b1.jpg) no-repeat;	
+	height: 71px;
+	width: 72px;
+    top: 417px;
+    left: 10px;	
+}
+
+.redButtonPressed {
+	background: url(../images/sprites/room-2/buttons/r-btn-pressed-b0.jpg) no-repeat;	
+	height: 71px;
+	width: 72px;
+    top: 417px;
+    left: 10px;	
+}
+
+.redButtonPressedBlueGlow {
+	background: url(../images/sprites/room-2/buttons/r-btn-pressed-b1.jpg) no-repeat;	
+	height: 71px;
+	width: 72px;
+    top: 417px;
+    left: 10px;	
+}
+
+.blueButton {
+	background: url(../images/sprites/room-2/buttons/b-btn.jpg) no-repeat;	
+	height: 71px;
+	width: 69px;
+    top: 417px;
+    left: 82px;	
+}
+
+.blueButtonRedGlow {
+	background: url(../images/sprites/room-2/buttons/b-btn-r1-g0.jpg) no-repeat;	
+	height: 71px;
+	width: 69px;
+    top: 417px;
+    left: 82px;	
+}
+
+.blueButtonGreenGlow {
+	background: url(../images/sprites/room-2/buttons/b-btn-r0-g1.jpg) no-repeat;	
+	height: 71px;
+	width: 69px;
+    top: 417px;
+    left: 82px;	
+}
+
+.blueButtonRedGreenGlow {
+	background: url(../images/sprites/room-2/buttons/b-btn-r1-g1.jpg) no-repeat;	
+	height: 71px;
+	width: 69px;
+    top: 417px;
+    left: 82px;	
+}
+
+.blueButtonPressed {
+	background: url(../images/sprites/room-2/buttons/b-btn-pressed-r0-g0.jpg) no-repeat;	
+	height: 71px;
+	width: 69px;
+    top: 417px;
+    left: 82px;	
+}
+
+.blueButtonPressedRedGlow {
+	background: url(../images/sprites/room-2/buttons/b-btn-pressed-r1-g0.jpg) no-repeat;	
+	height: 71px;
+	width: 69px;
+    top: 417px;
+    left: 82px;		
+}
+
+.blueButtonPressedGreenGlow {
+	background: url(../images/sprites/room-2/buttons/b-btn-pressed-r0-g1.jpg) no-repeat;	
+	height: 71px;
+	width: 69px;
+    top: 417px;
+    left: 82px;			
+}
+
+.blueButtonPressedRedGreenGlow {
+	background: url(../images/sprites/room-2/buttons/b-btn-pressed-r1-g1.jpg) no-repeat;	
+	height: 71px;
+	width: 69px;
+    top: 417px;
+    left: 82px;		
+}
+
+.greenButton {
+	background: url(../images/sprites/room-2/buttons/g-btn.jpg) no-repeat;	
+	height: 71px;
+	width: 70px;
+    top: 417px;
+    left: 151px;	
+}
+
+.greenButtonBlueGlow {
+	background: url(../images/sprites/room-2/buttons/g-btn-b1.jpg) no-repeat;	
+	height: 71px;
+	width: 70px;
+    top: 417px;
+    left: 151px;	
+}
+
+.greenButtonPressed {
+	background: url(../images/sprites/room-2/buttons/g-btn-pressed-b0.jpg) no-repeat;	
+	height: 71px;
+	width: 70px;
+    top: 417px;
+    left: 151px;	
+}
+
+.greenButtonPressedBlueGlow {
+	background: url(../images/sprites/room-2/buttons/g-btn-pressed-b1.jpg) no-repeat;	
+	height: 71px;
+	width: 70px;
+    top: 417px;
+    left: 151px;	
+}
+
+.room2ClickToProgress {
+	height: 128px;
+    width: 114px;
+    top: 172px;
+    left: 266px;	
+}
+
+.vileDoor {
+    height: 116px;
+    width: 78px;
+    top: 240px;
+    left: 1px;		
+}
+
+.smallDoor {
+    height: 30px;
+    width: 22px;
+    top: 161px;
+    left: 94px;		
+}
+
+.hotDoor {
+    height: 171px;
+    width: 60px;
+    top: 95px;
+    left: 383px;		
+}
+
+.coldDoor {
+    height: 171px;
+    width: 102px;
+    top: 122px;
+    left: 230px;		
+}
+
+.laughingDoor {
+    height: 220px;
+    width: 69px;
+    top: 129px;
+    left: 538px;		
+}
+
+.choice-box {
+	background: black;
+	position: absolute;
+    top: 374px;
+    left: 10px;
+    padding: 20px;
+    border: 1px solid white;
+}
+
+.choice-box p {
+	color: #fff;
+	margin-top: 0;
+}
+
+.yes-button {
+	background: #cccccc;
+	color: #333333;
+	cursor: pointer;
+	display: inline-block;
+    padding: 10px;
+    margin-left: 76px;
+    margin-right: 20px;	
+}
+
+.no-button {
+	background: #cccccc;
+	color: #333333;
+	cursor: pointer;
+	display: inline-block;
+    padding: 10px;	
+}
+
+.yes-button:hover {
+	background: #aaaaaa;
+	color: #999999;
+	cursor: pointer;
+	display: inline-block;
+    padding: 10px;
+    margin-left: 76px;
+    margin-right: 20px;	
+}
+
+.no-button:hover {
+	background: #aaaaaa;
+	color: #999999;
+	cursor: pointer;
+	display: inline-block;
+    padding: 10px;	
+}
+
+#playerControls {
+	margin: 20px 0;
+	text-align: center;
+	width: 100%;
+}
+
+#inputButton {
+	margin: 0 auto;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
