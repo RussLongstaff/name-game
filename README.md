@@ -1,5 +1,5 @@
-# name-game
-A short JavaScript game
+# javascript-game
+A short JavaScript point and click room exploration game.
 
 ## Notes
 Located in notes.docx
