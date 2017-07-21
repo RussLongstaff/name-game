@@ -178,7 +178,7 @@ function loadRoom1(){
 
 
 	// we need a slight delay 
-	var roomSequence1 = window.setInterval(room1Sequence1, 3000);
+	var roomSequence1 = window.setInterval(room1Sequence1, 5000);
 
 	var counter = 0;
 
@@ -223,7 +223,7 @@ function loadRoom2(){
 
 	var backdrop = document.querySelector(".backdrop");
 	// was 8000
-	var roomSequence1 = window.setInterval(room2Sequence1, 3000);
+	var roomSequence1 = window.setInterval(room2Sequence1, 5000);
 	var counter = 0;
 
 	function room2Sequence1(){
@@ -390,7 +390,7 @@ function loadRoom3(){
 	// remove the makeshift backdrop from the last room
 	var backdrop = document.querySelector(".backdrop");
 	var counter = 0;
-	//sceneBackground.removeChild(backdrop);
+	sceneBackground.removeChild(backdrop);
 	// Set the screen message
 	sceneMessageContainer.textContent = sceneMessage.room3;
 	// Set the background

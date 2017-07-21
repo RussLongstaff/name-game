@@ -32,12 +32,12 @@ h1 {
 }
 
 #viewPort.begin {
-	background: url(../images/backgrounds/game-background-p5-1-x.jpg);
+	background: url(../images/backgrounds/begin-background.png);
 	background-size: contain;
 }
 
 #viewPort.intro {
-	background: url(../images/backgrounds/game-background-p7-4-x.jpg);
+	background: url(../images/backgrounds/intro-background.jpg);
 	background-size: contain;
 }
 
